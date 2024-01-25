@@ -1,0 +1,39 @@
+.home-container {
+    width: 100%;
+    margin: 30px;
+  }
+  
+  .filters {
+    width: 250px;
+    vertical-align: top;
+    padding-right:20px;
+  }
+
+  .filter{
+    margin-bottom:20px;
+  }
+
+  .filter-label{
+    font-weight: bold;
+  }
+
+  .filters input {
+    width: 250px;
+    padding: 10px;
+  }
+
+  .filters select {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .search-button-wrapper > input{
+    margin-top:20px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .home-container .character-list {
+    padding-left: 20px;
+    display: grid;
+  }

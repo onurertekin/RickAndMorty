@@ -1,0 +1,26 @@
+.episode {
+    background-color: #000;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.episode.selected{
+    background-color: blue;
+}
+
+.episode:hover{
+    background-color: blue;
+}
+
+.episode .name{
+    font-size:16px;
+}
+
+.episode .episodeNo{
+    font-size:16px;
+    font-weight: 500;;
+}

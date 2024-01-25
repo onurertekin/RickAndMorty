@@ -1,0 +1,52 @@
+
+  
+  .character {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 270px;
+    padding: 15px;
+    border: 2px solid #ffcb05;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  
+    .character-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .character-image {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 10px;
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+  
+      .name {
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 18px;
+      }
+  
+      .status,
+      .gender,
+      .species {
+        color: #ffcb05;
+      }
+    }
+  }
+  

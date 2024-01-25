@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enumerations\**" />
+    <Compile Remove="Response\IAM\Anonymous\**" />
+    <Compile Remove="Response\IAM\UserGroupRole\**" />
+    <EmbeddedResource Remove="Enumerations\**" />
+    <EmbeddedResource Remove="Response\IAM\Anonymous\**" />
+    <EmbeddedResource Remove="Response\IAM\UserGroupRole\**" />
+    <None Remove="Enumerations\**" />
+    <None Remove="Response\IAM\Anonymous\**" />
+    <None Remove="Response\IAM\UserGroupRole\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MacAddressVendorLookup" Version="1.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0-preview.2.23128.3" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0-preview.2.23128.3" />
+  </ItemGroup>
+
+</Project>
